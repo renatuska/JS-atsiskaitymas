@@ -51,7 +51,16 @@ form {
   background-color: #000;
   color: #fff;
 }
-
+#output, div {
+  max-width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  outline: 0;
+  border: 0;
+  font-size: 2em;
+  background-color: #fff;
+  color:#000;
+}
 /* Tablet */
 @media screen and (min-width: 768px) {
   .headline {

@@ -8,3 +8,22 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+
+document.getElementsByTagName("form")[0].addEventListener("submit", onSubmit);
+    let svorisKG;
+     function onSubmit(event){
+        event.preventDefault();
+        svorisKG = document.getElementById("search").value;
+        document.getElementById("output").innerHTML = result(svorisKG);
+    }   
+
+    function result(kg) {
+      return "Weight (lb): "+(kg / 2.2046).toFixed(2) + 
+      "<br>"+
+      "Weight (g): "+(kg * 1000).toFixed(2) + 
+      "<br>"+
+      "Weight (oz): "+(kg / 35.274).toFixed(2)
+    }
+
+
+
