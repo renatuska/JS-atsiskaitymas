@@ -21,6 +21,7 @@ function Calculator() {
     }
 }
 
+// Prašo 3 metodų, bet išvardina keturis, tai visus 4 ir panaudojam
 const cal = new Calculator();
 
 let sum = cal.sum(10, 5);
