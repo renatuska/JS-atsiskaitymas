@@ -25,9 +25,9 @@ function onLoad() {
           <h2 class="prop-text1">${property.brand} </h2>
           <hr>
           <h3
-                <li
-                <ul class="prop-text">${property.models}</ul>
-                </li>
+                
+                 class="prop-text">${property.models}
+                
             </h3>
         </div>`;
       });
